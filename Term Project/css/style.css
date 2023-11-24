@@ -1,0 +1,264 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Pseudo-class selector*/
+li:hover, p:hover, ul:hover, ol:hover {
+  color: rgb(221, 155, 177);
+}
+
+h2 {
+  color:#3498db;
+  text-align: center;
+}
+
+.player p, .computer p {
+  color:rgb(255, 255, 255);
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+h3 {
+  color:rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-image: url('../img/bkgd.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+/* Header Section */
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 11vh;
+  font-family: 'Croissant', sans-serif;
+}
+
+/* Logo Section */
+.logo-container, .logo2-container {
+  flex: 0 0 15%;
+}
+
+.logo2-container {
+  order:1;
+}
+.logo img, .logo2 img {
+  max-width: 100%;
+  max-height: 9vh;
+}
+
+/* Title Styling */
+.title {
+  font-size: 30px;
+  text-align: center;
+  flex: 1;
+}
+
+/* Content Section */
+.content1 {
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 15px;
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #3498db;
+}
+.content {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  justify-content: center;
+  box-shadow: 0 0 10px #3498db;
+  background-image: url('../img/back.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 15px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #3498db;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.image-container {
+  max-width: 100%; 
+    border-radius: 10px;
+outline: 2px solid #d48cd4;
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* Container for text content */
+.text-container {
+  padding-right: 20px; 
+}
+
+/* Styles for the image */
+#image {
+  width: 100%;
+  height: auto;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.player,
+.computer {
+  text-align: center;
+}
+
+.player-image,
+.computer-image {
+  width: 150px; 
+  height: 150px;
+
+}
+
+.player-image img {
+  left: 0;
+}
+
+.computer-image img {
+  left: 345px;
+  position: absolute;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.die {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+}
+
+.result {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Style for buttons */
+#rollButton,
+#resetButton {
+padding: 8px 16px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+background-color: #3498db;
+color: white;
+border: none;
+text-align: center;
+text-decoration: none;
+transition-duration: 0.4s;
+}
+
+#rollButton:hover,
+#resetButton:hover {
+background-color: #19435f;
+}
+.flippable {
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  
+  .navbar {
+      padding-top: 11vh;
+      grid-template-columns: 1fr;
+  }
+
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      width: 100%;
+      min-height: 11vh;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+  .content {
+      width: 600px;
+      margin-top: 14vh;
+      margin-bottom: -11vh;
+    }
+  
+  .content1{
+      display:none;
+  }
+
+  .content2{
+      margin-top: 18vh;
+  }
+  .logo-container {
+    flex: 0 0 100%;
+  }
+  
+  .logo2-container {
+      display:none;
+    }
+  
+  .logo img {
+    display: block;
+    margin: auto;
+  }
+  
+  .title {
+    display: none;
+  }
+}
